@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingDevice", "src\ParkingDevice\ParkingDevice.csproj", "{53CAFAC6-2B61-4D25-9204-EA83AEB80D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingDevice.Test", "src\ParkingDevice.Test\ParkingDevice.Test.csproj", "{D250A540-E650-4CD3-9EE0-0BF5BF8C3C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53CAFAC6-2B61-4D25-9204-EA83AEB80D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CAFAC6-2B61-4D25-9204-EA83AEB80D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CAFAC6-2B61-4D25-9204-EA83AEB80D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CAFAC6-2B61-4D25-9204-EA83AEB80D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D250A540-E650-4CD3-9EE0-0BF5BF8C3C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D250A540-E650-4CD3-9EE0-0BF5BF8C3C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D250A540-E650-4CD3-9EE0-0BF5BF8C3C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D250A540-E650-4CD3-9EE0-0BF5BF8C3C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F11F5F3B-B3F6-44A8-9C17-9FA81348039D}
+	EndGlobalSection
+EndGlobal
