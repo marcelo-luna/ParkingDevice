@@ -12,9 +12,8 @@ namespace ParkingDevice.Simulator
         public int CapacityParking { get; set; }
         private Random _random;
         private CancellationTokenSource _cancellationToken;
-        private ILogger<GateSensorSimulator> _logger;
 
-        public GateSensorSimulator(int capacityParking, ILogger<GateSensorSimulator> log)
+        public GateSensorSimulator(int capacityParking)
         {
             if (capacityParking < 1)
             {
@@ -22,7 +21,6 @@ namespace ParkingDevice.Simulator
             }
 
             CapacityParking = capacityParking;
-            _logger = log;
             _random = new Random();
             _cancellationToken = new CancellationTokenSource();
         }
@@ -49,7 +47,6 @@ namespace ParkingDevice.Simulator
             if (TotalCarsParked < CapacityParking)
             {
                 TotalCarsParked = TotalCarsParked + enterCarQuantity ?? TotalCarsParked + _random.Next(0, 2);
-                _logger.LogInformation($"Total parked cars {TotalCarsParked}");
             }
             await Task.Delay(1500);
         }
@@ -59,7 +56,6 @@ namespace ParkingDevice.Simulator
             if (TotalCarsParked > 0)
             {
                 TotalCarsParked = TotalCarsParked - exitCarQuantity ?? TotalCarsParked - _random.Next(0, 2);
-                _logger.LogInformation($"Total parked cars {TotalCarsParked}");
             }
             await Task.Delay(1500);
         }
