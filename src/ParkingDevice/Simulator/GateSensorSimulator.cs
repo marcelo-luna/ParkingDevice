@@ -21,7 +21,7 @@ namespace ParkingDevice.Simulator
             }
 
             CapacityParking = capacityParking;
-            _random = new Random();
+            _random = new Random(); 
             _cancellationToken = new CancellationTokenSource();
         }
 
