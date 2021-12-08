@@ -14,7 +14,7 @@ namespace ParkingDevice.Test
         public void Setup()
         {
             var logMock = new Mock<ILogger<GateSensorSimulator>>();
-            _gateSensorSimulator = new GateSensorSimulator(40, logMock.Object);
+            _gateSensorSimulator = new GateSensorSimulator(40);
         }
 
         [Test]
